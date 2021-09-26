@@ -22,7 +22,7 @@ const ArticleStyled = styled.article`
     align-items: center;
     justify-content: space-between;
 
-    & h4 {
+    & h3 {
       color: #084154;
       white-space: nowrap;
       margin-right: 1rem;

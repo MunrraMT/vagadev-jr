@@ -4,7 +4,7 @@ import FooterStyled from './styles';
 
 const SliderNav = ({ nameActual, numberActual, maxLength }) => (
   <FooterStyled>
-    <p>{nameActual}</p>
+    <h3>{nameActual}</h3>
     <p>
       {numberActual}/{maxLength}
       <img

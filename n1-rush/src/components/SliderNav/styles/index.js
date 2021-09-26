@@ -11,7 +11,7 @@ const FooterStyled = styled.footer`
 
   display: flex;
 
-  & p:first-child {
+  & h3 {
     flex-grow: 2;
     background-color: #3ec6e0;
     padding: 1.125rem 1.375rem;

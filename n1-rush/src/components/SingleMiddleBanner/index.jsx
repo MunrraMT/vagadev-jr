@@ -5,7 +5,7 @@ import ArticleStyled from './styles';
 const SingleMiddleBanner = ({ name, img }) => (
   <ArticleStyled>
     <header>
-      <h4>{name}</h4>
+      <h3>{name}</h3>
       <span />
     </header>
 
