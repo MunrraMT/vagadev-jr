@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 const SectionCart = styled.section`
   position: relative;
+  cursor: pointer;
 
   & p {
     background-color: #3ec6e0;

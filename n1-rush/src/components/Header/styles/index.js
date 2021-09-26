@@ -4,6 +4,7 @@ const HeaderStyled = styled.header`
   padding: 1.125rem;
   position: fixed;
   width: 100%;
+  z-index: 3;
 
   display: flex;
   flex-direction: row;

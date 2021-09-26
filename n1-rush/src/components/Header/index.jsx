@@ -11,6 +11,7 @@ const Header = () => (
 
     <section>
       <img
+        style={{ cursor: 'pointer' }}
         width="26.06"
         height="21.31"
         src="./svg/paper-plane.svg"
@@ -19,6 +20,7 @@ const Header = () => (
       />
 
       <img
+        style={{ cursor: 'pointer' }}
         width="25.73"
         height="25.72"
         src="./svg/search-solid.svg"

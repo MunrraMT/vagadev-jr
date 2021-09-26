@@ -6,6 +6,7 @@ const BtnIconHamburguer = () => (
     <BtnSingleBar />
     <BtnSingleBar />
     <BtnSingleBar />
+    teste
   </IconHamburguer>
 );
 
