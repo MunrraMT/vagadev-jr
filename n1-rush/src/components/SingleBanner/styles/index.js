@@ -6,6 +6,8 @@ const ArticleStyled = styled.article`
   text-align: right;
   width: 100%;
   height: 27.25rem;
+  position: relative;
+  overflow: hidden;
 
   display: flex;
   flex-direction: column;
@@ -46,6 +48,10 @@ const ArticleStyled = styled.article`
   }
 
   & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
     position: absolute;
     top: 0;
     left: 0;
