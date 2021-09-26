@@ -1,7 +1,9 @@
+import SectionStyled from './styles';
+
 import SingleMiddleBanner from '../SingleMiddleBanner';
 
-const Content = () => (
-  <section>
+const MiddleBanners = () => (
+  <SectionStyled>
     <SingleMiddleBanner
       name="The Legend of Zelda - Breath of th wild"
       img="./webp/zelda_banner.webp"
@@ -11,7 +13,7 @@ const Content = () => (
       name="SEKIRO - Shadows die twice"
       img="./webp/sekiro_banner.webp"
     />
-  </section>
+  </SectionStyled>
 );
 
-export default Content;
+export default MiddleBanners;

@@ -1,4 +1,4 @@
-import Content from '../../components/Content';
+import MiddleBanners from '../../components/MiddleBanners';
 import Header from '../../components/Header';
 import Hero from '../../components/Hero';
 
@@ -8,7 +8,7 @@ const HomePage = () => (
 
     <main>
       <Hero />
-      <Content />
+      <MiddleBanners />
     </main>
   </>
 );

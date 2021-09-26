@@ -13,7 +13,10 @@ const ArticleStyled = styled.article`
   & header {
     background-color: #3ec6e0;
     margin-left: 0.368rem;
-    padding: 0.375rem 0.851rem 0.375rem 0.625rem;
+    padding-top: 0.357rem;
+    padding-right: 0.851rem;
+    padding-bottom: 0.375rem;
+    padding-left: 0.625rem;
 
     display: flex;
     align-items: center;
