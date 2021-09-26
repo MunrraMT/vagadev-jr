@@ -1,5 +1,7 @@
-import BtnIconHamburguer from '../IconHamburguer';
 import HeaderStyled from './styles';
+
+import Cart from '../Cart';
+import BtnIconHamburguer from '../IconHamburguer';
 
 const Header = () => (
   <HeaderStyled>
@@ -22,11 +24,8 @@ const Header = () => (
         alt="Botão buscar jogo por nome"
         aria-label="Botão buscar jogo por nome"
       />
-      <img
-        src="./svg/shopping-bag-solid.svg"
-        alt="Botão mostrar o carrinho de compras"
-        aria-label="Botão mostrar o carrinho de compras"
-      />
+
+      <Cart />
     </section>
   </HeaderStyled>
 );

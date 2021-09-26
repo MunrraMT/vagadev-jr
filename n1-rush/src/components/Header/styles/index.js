@@ -13,12 +13,15 @@ const HeaderStyled = styled.header`
   }
 
   & section {
-    width: 35%;
-
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+
+    & img {
+      margin-right: 1.267rem;
+    }
   }
 `;
 
