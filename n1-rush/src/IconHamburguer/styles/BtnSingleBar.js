@@ -4,7 +4,7 @@ const BtnSingleBar = styled.span`
   display: block;
   width: 1.875rem;
   height: 0.188rem;
-  background-color: red;
+  background-color: #ffffff;
   border-radius: 10rem;
 
   &:last-child {
