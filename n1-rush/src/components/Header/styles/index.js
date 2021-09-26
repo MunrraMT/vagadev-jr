@@ -7,7 +7,7 @@ const HeaderStyled = styled.header`
   flex-direction: row;
   align-items: center;
 
-  & img:first-of-type:not(section img) {
+  & h1 {
     margin-left: 1.75rem;
     margin-right: auto;
   }
