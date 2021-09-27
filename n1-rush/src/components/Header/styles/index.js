@@ -10,6 +10,9 @@ const HeaderStyled = styled.header`
   flex-direction: row;
   align-items: center;
 
+  background: ${(props) =>
+    props.backGround ? 'var(--color-black-transparent)' : 'none'};
+
   & h1 {
     margin-left: 1.75rem;
     margin-right: auto;
