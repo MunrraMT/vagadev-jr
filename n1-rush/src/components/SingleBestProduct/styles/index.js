@@ -3,8 +3,8 @@ import styled from 'styled-components';
 const ArticleStyled = styled.article`
   width: 100%;
 
-  background-color: #ffffff;
-  box-shadow: 0px 4px 20px 7px rgba(0, 0, 0, 0.07);
+  background-color: var(--color-white);
+  box-shadow: var(--box-shadow);
   border-radius: 0.625rem;
   overflow: hidden;
 
@@ -42,8 +42,8 @@ const ArticleStyled = styled.article`
     & button {
       margin: 0 2.323rem;
       height: 2.196rem;
-      background-color: #3ec6e0;
-      color: #ffffff;
+      background-color: var(--color-blue);
+      color: var(--color-white);
       border: none;
       border-radius: 0.313rem;
       text-transform: uppercase;
@@ -59,7 +59,7 @@ const ArticleStyled = styled.article`
 
     object-fit: contain;
     object-position: center;
-    border-bottom: 2px solid #3ec6e0;
+    border-bottom: 2px solid var(--color-blue);
     padding-top: 1.521rem;
     padding-bottom: 0.676rem;
   }

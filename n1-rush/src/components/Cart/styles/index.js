@@ -5,8 +5,8 @@ const SectionCart = styled.section`
   cursor: pointer;
 
   & p {
-    background-color: #3ec6e0;
-    color: #ffffff;
+    background-color: var(--color-blue);
+    color: var(--color-white);
     border-radius: 100%;
     width: 1.438rem;
     height: 1.438rem;

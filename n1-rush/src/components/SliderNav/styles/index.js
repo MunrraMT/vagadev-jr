@@ -4,7 +4,7 @@ const SectionStyled = styled.section`
   width: 100%;
   height: 3.25rem;
 
-  color: #ffffff;
+  color: var(--color-white);
   text-transform: uppercase;
 
   font-family: 'Roboto';
@@ -19,7 +19,7 @@ const SectionStyled = styled.section`
 
     line-height: 3.25rem;
 
-    background-color: #3ec6e0;
+    background-color: var(--color-blue);
     padding-left: 1.375rem;
     border-bottom-left-radius: 0.625rem;
   }
@@ -28,7 +28,7 @@ const SectionStyled = styled.section`
     width: 8.75rem;
     height: 3.25rem;
 
-    background-color: #084154;
+    background-color: var(--color-dark-blue);
     padding: 1.125rem;
 
     display: flex;

@@ -9,7 +9,7 @@ const SectionStyled = styled.section`
   }
 
   & h2 {
-    color: #084154;
+    color: var(--color-dark-blue);
 
     font-family: 'Roboto';
     font-weight: 300;

@@ -4,7 +4,7 @@ const ArticleStyled = styled.article`
   width: 100%;
   height: 27.25rem;
 
-  color: #ffffff;
+  color: var(--color-white);
   font-family: 'Roboto';
   text-align: right;
   position: relative;
@@ -17,7 +17,7 @@ const ArticleStyled = styled.article`
 
     height: 13.375rem;
     padding: 0.875rem 1.813rem;
-    background-color: rgba(0, 0, 0, 0.65);
+    background-color: var(--color-black-transparent);
   }
 
   & header h2 {
@@ -28,7 +28,7 @@ const ArticleStyled = styled.article`
 
   & header h3 {
     font-weight: 900;
-    color: #3ec6e0;
+    color: var(--color-blue);
 
     display: flex;
     justify-content: right;

@@ -4,14 +4,14 @@ const ArticleStyled = styled.article`
   height: 13.688rem;
   width: 100%;
 
-  background-color: #084154;
+  background-color: var(--color-dark-blue);
   border-bottom-left-radius: 0.313rem;
 
   display: flex;
   flex-direction: column-reverse;
 
   & header {
-    background-color: #3ec6e0;
+    background-color: var(--color-blue);
     margin-left: 0.368rem;
     padding-top: 0.357rem;
     padding-right: 0.851rem;
@@ -23,7 +23,7 @@ const ArticleStyled = styled.article`
     justify-content: space-between;
 
     & h3 {
-      color: #084154;
+      color: var(--color-dark-blue);
       white-space: nowrap;
       margin-right: 1rem;
 
@@ -36,7 +36,7 @@ const ArticleStyled = styled.article`
       width: 100%;
       height: 0.125rem;
 
-      background-color: #084154;
+      background-color: var(--color-dark-blue);
     }
   }
 

@@ -10,8 +10,8 @@ const FooterStyled = styled.footer`
   & section:first-child {
     flex-grow: 2;
 
-    background-color: #3ec6e0;
-    color: #ffffff;
+    background-color: var(--color-blue);
+    color: var(--color-white);
     padding-top: 1.313rem;
     padding-bottom: 1.313rem;
     padding-left: 1.25rem;
@@ -33,7 +33,7 @@ const FooterStyled = styled.footer`
     width: 4.938rem;
     height: 4.25rem;
 
-    background-color: #084154;
+    background-color: var(--color-dark-blue);
     object-fit: cover;
     object-position: center;
 
