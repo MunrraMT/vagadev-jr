@@ -1,12 +1,30 @@
 import styled from 'styled-components';
 
 const SectionStyled = styled.section`
-  padding-left: 1.375rem;
+  margin-bottom: 8.125rem;
 
-  & section {
+  & section:first-child {
+    padding-left: 1.375rem;
+  }
+
+  & section:not(:first-child) {
     padding-top: 1.938rem;
-    padding-right: 4.344rem;
-    padding-left: 2.9338rem;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+
+    & .btn-left,
+    & .btn-right {
+      width: 2.5rem;
+      height: 4rem;
+
+      border: none;
+      background: none;
+      cursor: pointer;
+    }
   }
 `;
 
