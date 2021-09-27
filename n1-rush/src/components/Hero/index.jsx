@@ -5,7 +5,7 @@ const Hero = () => (
   <section>
     <SingleBanner
       name="mortal kombat"
-      price="299,99"
+      price={29999}
       description="Mortal Kombat X combina uma apresentação cinemática única com uma
         jogabilidade totalmente nova. Os jogadores podem escolher pela primeira
         vez diversas variantes de cada personagem, afetando tanto a estratégia

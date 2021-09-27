@@ -1,4 +1,4 @@
-import { string } from 'prop-types';
+import { number, string } from 'prop-types';
 
 import ArticleStyled from './styles';
 
@@ -7,8 +7,8 @@ const SingleBanner = ({ name, price, description, img, altImg }) => (
     <header>
       <h2>{name}</h2>
       <h3>
-        <span>R$ {price.slice(0, -3)}</span>
-        <span>,{price.slice(-2)}</span>
+        <span>R$ {String(price).slice(0, -2)}</span>
+        <span>,{String(price).slice(-2)}</span>
       </h3>
       <p>{description}</p>
     </header>
@@ -18,7 +18,7 @@ const SingleBanner = ({ name, price, description, img, altImg }) => (
 
 SingleBanner.propTypes = {
   name: string.isRequired,
-  price: string.isRequired,
+  price: number.isRequired,
   description: string.isRequired,
   img: string.isRequired,
   altImg: string.isRequired,
