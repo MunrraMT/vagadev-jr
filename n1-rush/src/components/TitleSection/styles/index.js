@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const SectionStyled = styled.h2`
+const SectionStyled = styled.section`
   display: flex;
   align-items: center;
 

@@ -10,8 +10,7 @@ const ArticleStyled = styled.article`
   overflow: hidden;
 
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  flex-direction: column-reverse;
 
   & header {
     width: 100%;

@@ -1,28 +1,33 @@
 import { number, string } from 'prop-types';
 
-import FooterStyled from './styles';
+import SectionStyled from './styles';
+
+import AngleSolid from '../SvgComponent/AngleSolid';
 
 const SliderNav = ({ nameActual, numberActual, maxLength }) => (
-  <FooterStyled>
+  <SectionStyled>
     <h3>{nameActual}</h3>
-    <p>
-      {numberActual}/{maxLength}
-      <img
-        width="10"
-        height="17.87"
-        src="./svg/angle-left-solid.svg"
-        alt="Voltar um jogo no banner principal"
-        aria-label="Voltar um jogo no banner principal"
-      />
-      <img
-        width="10"
-        height="17.87"
-        src="./svg/angle-right-solid.svg"
-        alt="Avançar um jogo no banner principal"
-        aria-label="Avançar um jogo no banner principal"
-      />
-    </p>
-  </FooterStyled>
+
+    <section>
+      <p>
+        {numberActual} / {maxLength}
+      </p>
+
+      <button
+        type="button"
+        aria-label="Mostrar jogo anterior no banner principal"
+      >
+        <AngleSolid left color="#ffffff" />
+      </button>
+
+      <button
+        type="button"
+        aria-label="Mostrar próximo jogo no banner principal"
+      >
+        <AngleSolid color="#ffffff" />
+      </button>
+    </section>
+  </SectionStyled>
 );
 
 SliderNav.propTypes = {
