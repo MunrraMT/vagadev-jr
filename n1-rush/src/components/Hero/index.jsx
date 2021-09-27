@@ -10,8 +10,10 @@ const Hero = () => (
         jogabilidade totalmente nova. Os jogadores podem escolher pela primeira
         vez diversas variantes de cada personagem, afetando tanto a estratégia
         como o estilo de luta."
-      img="./webp/principal_banner_mobile 1.webp"
-      altImg="Capa do Jogo Mortal Kombat"
+      webp="./webp/principal_banner_mobile_1.webp"
+      webp2x="./webp/principal_banner_mobile_1-2x.webp"
+      png="./png/principal_banner_mobile_1.png"
+      png2x="./png/principal_banner_mobile_1-2x.png"
     />
 
     <SliderNav nameActual="mortal kombat" numberActual={1} maxLength={2} />

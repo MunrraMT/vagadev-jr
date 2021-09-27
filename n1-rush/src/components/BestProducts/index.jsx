@@ -24,7 +24,10 @@ const BestProducts = () => (
       <SingleBestProduct
         name="otriders"
         price={20000}
-        img="./webp/product-outriders.webp"
+        webp="./webp/product-outriders.webp"
+        webp2x="./webp/product-outriders-2x.webp"
+        png="./png/product-outriders.png"
+        png2x="./png/product-outriders-2x.png"
       />
 
       <button

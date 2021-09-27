@@ -5,11 +5,6 @@ const H1Styled = styled.h1`
     text-decoration: none;
     color: transparent;
     font-size: 0;
-
-    img {
-      width: auto;
-      height: auto;
-    }
   }
 `;
 
