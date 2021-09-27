@@ -1,19 +1,20 @@
 import styled from 'styled-components';
 
 const ArticleStyled = styled.article`
+  width: 100%;
+  height: 27.25rem;
+
   color: #ffffff;
   font-family: 'Roboto';
   text-align: right;
-  width: 100%;
-  height: 27.25rem;
   position: relative;
-  overflow: hidden;
 
   display: flex;
   flex-direction: column-reverse;
 
   & header {
     width: 100%;
+
     height: 13.375rem;
     padding: 0.875rem 1.813rem;
     background-color: rgba(0, 0, 0, 0.65);
@@ -46,15 +47,21 @@ const ArticleStyled = styled.article`
     font-size: 0.75rem;
   }
 
-  & img {
-    width: 100%;
+  & picture {
     height: 100%;
-    object-fit: cover;
-    object-position: center;
+    width: 100%;
+
+    overflow: hidden;
     position: absolute;
-    top: 0;
-    left: 0;
     z-index: -1;
+
+    & img {
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+      object-position: center;
+    }
   }
 `;
 

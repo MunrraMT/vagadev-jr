@@ -40,12 +40,16 @@ const ArticleStyled = styled.article`
     }
   }
 
-  & img {
-    width: 100%;
-    height: 100%;
+  & picture {
+    overflow: hidden;
 
-    object-fit: cover;
-    object-position: center;
+    & img {
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+      object-position: center;
+    }
   }
 `;
 
