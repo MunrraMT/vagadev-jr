@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 
 const IconHamburguer = styled.button`
+  width: 2.2rem;
+  height: 2rem;
+
   background-color: transparent;
   border: none;
-  width: 1.875rem;
-  height: 1.5rem;
   cursor: pointer;
 `;
 

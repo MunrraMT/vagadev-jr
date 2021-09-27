@@ -1,21 +1,30 @@
+import { useContext } from 'react';
+
 import MiddleBanners from '../../components/MiddleBanners';
 import Header from '../../components/Header';
 import Hero from '../../components/Hero';
 import BestProducts from '../../components/BestProducts';
 import Footer from '../../components/Footer';
+import NavMenuMobile from '../../components/NavMenuMobile';
+import Context from '../../providers/Context';
 
-const HomePage = () => (
-  <>
-    <Header />
+const HomePage = () => {
+  const { isOpenMenu } = useContext(Context);
 
-    <main>
-      <Hero />
-      <MiddleBanners />
-      <BestProducts />
-    </main>
+  return (
+    <>
+      <Header />
+      {isOpenMenu && <NavMenuMobile />}
 
-    <Footer />
-  </>
-);
+      <main>
+        <Hero />
+        <MiddleBanners />
+        <BestProducts />
+      </main>
+
+      <Footer />
+    </>
+  );
+};
 
 export default HomePage;
