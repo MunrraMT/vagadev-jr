@@ -27,7 +27,7 @@ const ArticleStyled = styled.article`
       white-space: nowrap;
       margin-right: 1rem;
 
-      font-family: 'Roboto';
+      font-family: var(--font-family);
       font-weight: 700;
       font-size: 0.75rem;
     }

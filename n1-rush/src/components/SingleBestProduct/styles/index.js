@@ -19,7 +19,7 @@ const ArticleStyled = styled.article`
     padding-right: 1.5rem;
     padding-bottom: 0.929rem;
 
-    font-family: 'Roboto';
+    font-family: var(--font-family);
 
     display: flex;
     flex-direction: column;

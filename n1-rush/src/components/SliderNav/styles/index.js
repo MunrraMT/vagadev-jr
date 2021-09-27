@@ -7,7 +7,7 @@ const SectionStyled = styled.section`
   color: var(--color-white);
   text-transform: uppercase;
 
-  font-family: 'Roboto';
+  font-family: var(--font-family);
   font-size: 0.875;
   font-weight: 400;
 

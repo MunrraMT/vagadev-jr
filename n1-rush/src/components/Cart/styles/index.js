@@ -12,7 +12,7 @@ const SectionCart = styled.section`
     height: 1.438rem;
     line-height: 0.875rem;
 
-    font-family: 'Roboto';
+    font-family: var(--font-family);
     font-weight: 900;
     font-size: 0.875rem;
 

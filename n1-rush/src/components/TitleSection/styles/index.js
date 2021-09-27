@@ -11,7 +11,7 @@ const SectionStyled = styled.section`
   & h2 {
     color: var(--color-dark-blue);
 
-    font-family: 'Roboto';
+    font-family: var(--font-family);
     font-weight: 300;
     font-size: 1.125rem;
   }

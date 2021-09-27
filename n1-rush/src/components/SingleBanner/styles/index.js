@@ -5,7 +5,7 @@ const ArticleStyled = styled.article`
   height: 27.25rem;
 
   color: var(--color-white);
-  font-family: 'Roboto';
+  font-family: var(--font-family);
   text-align: right;
   position: relative;
 
