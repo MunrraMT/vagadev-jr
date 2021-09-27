@@ -14,12 +14,12 @@ const SectionStyled = styled.section`
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
 
     & .btn-left,
     & .btn-right {
-      width: 2.5rem;
-      height: 4rem;
+      width: 4.313rem;
+      height: 6rem;
 
       border: none;
       background: none;

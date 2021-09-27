@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 const ArticleStyled = styled.article`
+  width: 100%;
+
   background-color: #ffffff;
   box-shadow: 0px 4px 20px 7px rgba(0, 0, 0, 0.07);
   border-radius: 0.625rem;
