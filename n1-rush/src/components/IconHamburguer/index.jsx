@@ -1,4 +1,5 @@
 import { useContext } from 'react';
+
 import Context from '../../providers/Context';
 import IconHamburguer from './styles';
 import BtnSingleBar from './styles/BtnSingleBar';

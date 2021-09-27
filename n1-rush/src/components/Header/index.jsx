@@ -1,16 +1,27 @@
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 
 import HeaderStyled from './styles';
 
+import Context from '../../providers/Context';
 import Cart from '../Cart';
 import BtnIconHamburguer from '../IconHamburguer';
 import TitlePage from '../TitlePage';
 
 const Header = () => {
   const [isMoved, setIsMoved] = useState(false);
+  const { isOpenMenu } = useContext(Context);
 
   const handleScroll = () => {
     setIsMoved(window.pageYOffset > 75);
+  };
+
+  const handleBackground = () => {
+    if (isOpenMenu) return false;
+    if (isMoved && isOpenMenu) return false;
+
+    if (isMoved) return true;
+
+    return false;
   };
 
   useEffect(() => {
@@ -20,7 +31,7 @@ const Header = () => {
   }, []);
 
   return (
-    <HeaderStyled backGround={isMoved}>
+    <HeaderStyled backGround={handleBackground()}>
       <BtnIconHamburguer />
       <TitlePage />
 

@@ -9,7 +9,7 @@ const SectionStyled = styled.section`
   left: 0;
   z-index: 2;
 
-  background: var(--color-black);
+  background: var(--color-dark-blue);
 `;
 
 export default SectionStyled;

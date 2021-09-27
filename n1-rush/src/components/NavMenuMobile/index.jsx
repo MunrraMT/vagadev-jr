@@ -1,5 +1,6 @@
 /* eslint-disable no-return-assign */
 import { useEffect } from 'react';
+
 import SectionStyled from './styles';
 
 const NavMenuMobile = () => {
