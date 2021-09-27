@@ -32,9 +32,13 @@ const SectionStyled = styled.section`
     padding: 1.125rem;
 
     display: flex;
+    align-items: center;
     justify-content: space-between;
 
     & button {
+      height: 2rem;
+      width: 1.5rem;
+
       border: none;
       background: none;
       cursor: pointer;
