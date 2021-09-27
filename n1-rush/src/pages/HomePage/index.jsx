@@ -2,6 +2,7 @@ import MiddleBanners from '../../components/MiddleBanners';
 import Header from '../../components/Header';
 import Hero from '../../components/Hero';
 import BestProducts from '../../components/BestProducts';
+import Footer from '../../components/Footer';
 
 const HomePage = () => (
   <>
@@ -12,6 +13,8 @@ const HomePage = () => (
       <MiddleBanners />
       <BestProducts />
     </main>
+
+    <Footer />
   </>
 );
 
