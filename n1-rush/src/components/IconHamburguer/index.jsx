@@ -1,11 +1,12 @@
 import { useContext } from 'react';
 
-import Context from '../../providers/Context';
 import IconHamburguer from './styles';
-import BtnSingleBar from './styles/BtnSingleBar';
+
+import Context from '../../providers/Context';
+import IconBar from './styles/IconBar';
 
 const BtnIconHamburguer = () => {
-  const { setIsOpenMenu } = useContext(Context);
+  const { isOpenMenu, setIsOpenMenu } = useContext(Context);
 
   const handleClick = () => {
     setIsOpenMenu((prev) => !prev);
@@ -17,9 +18,7 @@ const BtnIconHamburguer = () => {
       aria-label="Botão de menu"
       onClick={handleClick}
     >
-      <BtnSingleBar />
-      <BtnSingleBar />
-      <BtnSingleBar />
+      <IconBar isOpenMenu={isOpenMenu} />
     </IconHamburguer>
   );
 };
