@@ -1,4 +1,4 @@
-import { string } from 'prop-types';
+import { number, string } from 'prop-types';
 
 import ArticleStyled from './styles';
 
@@ -21,7 +21,7 @@ const SingleBestProduct = ({ name, price, img }) => (
 
 SingleBestProduct.propTypes = {
   name: string.isRequired,
-  price: string.isRequired,
+  price: number.isRequired,
   img: string.isRequired,
 };
 
