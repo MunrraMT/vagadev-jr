@@ -17,7 +17,7 @@ const Header = () => {
     setIsMoved(window.pageYOffset > 75);
   };
 
-  const handleBackground = () => {
+  const handleScrolledPage = () => {
     if (isDesktop && isOpenMenu && !isMoved) return false;
     if (isDesktop && isOpenMenu) return true;
     if (isOpenMenu) return false;
@@ -33,7 +33,7 @@ const Header = () => {
   }, []);
 
   return (
-    <HeaderStyled backGround={handleBackground()}>
+    <HeaderStyled scrolledPage={handleScrolledPage()}>
       <BtnIconHamburguer />
       <TitlePage />
 

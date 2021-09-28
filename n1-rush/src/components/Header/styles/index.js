@@ -14,7 +14,7 @@ const HeaderStyled = styled.header`
   align-items: center;
 
   background: ${(props) =>
-    props.backGround ? 'var(--color-black-transparent)' : 'none'};
+    props.scrolledPage ? 'var(--color-black-transparent)' : 'none'};
 
   & h1 {
     margin-left: 1.75rem;
@@ -34,7 +34,7 @@ const HeaderStyled = styled.header`
   }
 
   @media screen and (min-width: 900px) {
-    padding-top: 2.75rem;
+    padding-top: ${(props) => (props.scrolledPage ? '1.125rem' : '2.75rem')};
 
     & section button:not(:last-child) {
       margin-right: 0rem;

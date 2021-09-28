@@ -13,6 +13,7 @@ const SectionStyled = styled.section`
   padding-top: 6.316rem;
   padding-left: 1.813rem;
   padding-right: 1.813rem;
+  transition: all 0.3s;
 
   display: flex;
   flex-direction: column;
@@ -30,7 +31,7 @@ const SectionStyled = styled.section`
     height: 15.563rem;
 
     position: fixed;
-    top: 5.563rem;
+    top: ${(props) => (props.scrolledPage ? '3.938rem' : '5.563rem')};
     left: 0;
     z-index: 5;
 
