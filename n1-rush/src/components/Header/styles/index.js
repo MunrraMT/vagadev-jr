@@ -45,6 +45,13 @@ const HeaderStyled = styled.header`
       margin-right: 0rem;
     }
   }
+
+  @media screen and (min-width: 1500px) {
+    max-width: 100vw;
+
+    padding-left: 23rem;
+    padding-right: 23rem;
+  }
 `;
 
 export default HeaderStyled;
