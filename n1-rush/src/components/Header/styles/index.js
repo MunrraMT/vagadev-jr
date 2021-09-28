@@ -40,10 +40,6 @@ const HeaderStyled = styled.header`
       margin-right: 0rem;
       border-right: 1px solid var(--color-white);
     }
-
-    & section button:last-child {
-      margin-left: 2.438rem;
-    }
   }
 `;
 

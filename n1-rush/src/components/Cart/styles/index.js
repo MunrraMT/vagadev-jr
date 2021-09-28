@@ -27,6 +27,23 @@ const ButtonStyled = styled.button`
     left: 1.125rem;
     transform: translateY(-50%);
   }
+
+  @media screen and (min-width: 900px) {
+    width: 7rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & p {
+      position: relative;
+      top: auto;
+      left: auto;
+      transform: none;
+
+      margin-left: 0.367rem;
+    }
+  }
 `;
 
 export default ButtonStyled;
