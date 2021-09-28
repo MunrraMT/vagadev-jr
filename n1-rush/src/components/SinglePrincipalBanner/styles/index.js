@@ -76,6 +76,7 @@ const ArticleStyled = styled.article`
     width: 100vw;
     height: 52.5rem;
 
+    display: flex;
     flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
@@ -116,7 +117,7 @@ const ArticleStyled = styled.article`
 
       & img {
         width: 100%;
-        height: 52.5rem;
+        height: 100%;
       }
     }
   }

@@ -7,7 +7,7 @@ const SectionStyled = styled.section`
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 15;
+  z-index: 50;
 
   background-color: var(--color-black-transparent);
   padding: 0 1rem;

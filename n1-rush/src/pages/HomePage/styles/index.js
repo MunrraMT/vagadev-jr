@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const SectionStyled = styled.section`
-  width: 100%;
+  overflow-x: hidden;
 
   display: flex;
   flex-direction: column;
