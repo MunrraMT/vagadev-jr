@@ -7,6 +7,7 @@ const HeaderStyled = styled.header`
   padding: 1.125rem;
   position: fixed;
   z-index: 3;
+  transition: all 0.3s;
 
   display: flex;
   flex-direction: row;
@@ -33,6 +34,8 @@ const HeaderStyled = styled.header`
   }
 
   @media screen and (min-width: 900px) {
+    padding-top: 2.75rem;
+
     & section button:not(:last-child) {
       margin-right: 0rem;
       border-right: 1px solid var(--color-white);

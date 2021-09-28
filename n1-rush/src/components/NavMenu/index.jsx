@@ -1,18 +1,30 @@
 /* eslint-disable no-return-assign */
-import { useEffect } from 'react';
+
+import { useContext, useEffect } from 'react';
 
 import SectionStyled from './styles';
 
+import Context from '../../providers/Context';
 import SingleMenuMobile from '../SingleMenuMobile';
 
-const NavMenuMobile = () => {
+const NavMenu = () => {
+  const { isDesktop, setIsOpenMenu } = useContext(Context);
+
   useEffect(() => {
-    document.body.style.overflow = 'hidden';
+    if (!isDesktop) {
+      document.body.style.overflow = 'hidden';
+    }
     return () => (document.body.style.overflow = 'unset');
-  }, []);
+  }, [isDesktop]);
+
+  const handleMouseLeave = () => {
+    if (isDesktop) {
+      setIsOpenMenu((prev) => !prev);
+    }
+  };
 
   return (
-    <SectionStyled>
+    <SectionStyled onMouseLeave={handleMouseLeave}>
       <SingleMenuMobile
         content={{
           title: 'Luta',
@@ -42,4 +54,4 @@ const NavMenuMobile = () => {
   );
 };
 
-export default NavMenuMobile;
+export default NavMenu;

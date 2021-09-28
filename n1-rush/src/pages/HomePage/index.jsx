@@ -7,7 +7,7 @@ import Header from '../../components/Header';
 import Hero from '../../components/Hero';
 import BestProducts from '../../components/BestProducts';
 import Footer from '../../components/Footer';
-import NavMenuMobile from '../../components/NavMenuMobile';
+import NavMenu from '../../components/NavMenu';
 import Context from '../../providers/Context';
 import ClickBuy from '../../components/ClickedBuy';
 
@@ -17,7 +17,7 @@ const HomePage = () => {
   return (
     <SectionStyled>
       <Header />
-      {isOpenMenu && <NavMenuMobile />}
+      {isOpenMenu && <NavMenu />}
       {isClickedBuy && <ClickBuy />}
 
       <main>

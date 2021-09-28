@@ -29,6 +29,19 @@ const ArticleStyled = styled.article`
       }
     }
   }
+
+  @media screen and (min-width: 900px) {
+    width: 10.375rem;
+
+    & h2 {
+      font-weight: 700;
+      font-size: 1rem;
+    }
+
+    & ul li {
+      font-size: 0.875rem;
+    }
+  }
 `;
 
 export default ArticleStyled;

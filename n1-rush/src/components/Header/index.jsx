@@ -10,16 +10,17 @@ import BtnHeader from '../BtnHeader';
 
 const Header = () => {
   const [isMoved, setIsMoved] = useState(false);
-  const { isOpenMenu } = useContext(Context);
+
+  const { isOpenMenu, isDesktop } = useContext(Context);
 
   const handleScroll = () => {
     setIsMoved(window.pageYOffset > 75);
   };
 
   const handleBackground = () => {
+    if (isDesktop && isOpenMenu && !isMoved) return false;
+    if (isDesktop && isOpenMenu) return true;
     if (isOpenMenu) return false;
-    if (isMoved && isOpenMenu) return false;
-
     if (isMoved) return true;
 
     return false;
