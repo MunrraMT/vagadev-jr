@@ -1,9 +1,10 @@
-import SingleBanner from '../SingleBanner';
+import SinglePrincipalBanner from '../SinglePrincipalBanner';
 import SliderNav from '../SliderNav';
+import SectionStyled from './styles';
 
 const Hero = () => (
-  <section>
-    <SingleBanner
+  <SectionStyled>
+    <SinglePrincipalBanner
       name="mortal kombat"
       price={29999}
       description="Mortal Kombat X combina uma apresentação cinemática única com uma
@@ -11,13 +12,15 @@ const Hero = () => (
         vez diversas variantes de cada personagem, afetando tanto a estratégia
         como o estilo de luta."
       webp="./webp/principal_banner_mobile_1.webp"
-      webp2x="./webp/principal_banner_mobile_1-2x.webp"
       png="./png/principal_banner_mobile_1.png"
-      png2x="./png/principal_banner_mobile_1-2x.png"
+      bigPng="./png/principal_banner_tablet_1.png"
+      bigWebp="./webp/principal_banner_tablet_1.webp"
+      desktopPng="./png/principal_banner_desktop_1.png"
+      desktopWebp="./webp/principal_banner_desktop_1.webp"
     />
 
     <SliderNav nameActual="mortal kombat" numberActual={1} maxLength={2} />
-  </section>
+  </SectionStyled>
 );
 
 export default Hero;
