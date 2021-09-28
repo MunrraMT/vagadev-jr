@@ -10,6 +10,7 @@ import ProductShow from '../ProductShow';
 
 const BestProducts = () => {
   const [productList, setProductList] = useState([]);
+
   const { isDesktop } = useContext(Context);
 
   useEffect(() => {

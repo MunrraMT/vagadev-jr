@@ -1,25 +1,36 @@
+import { useEffect, useState } from 'react';
+
 import SectionStyled from './styles';
 
 import SingleMiddleBanner from '../SingleMiddleBanner';
+import Loading from '../Loading';
 
-const MiddleBanners = () => (
-  <SectionStyled>
-    <SingleMiddleBanner
-      name="The Legend of Zelda - Breath of th wild"
-      webp="./webp/zelda_banner.webp"
-      desktopWebp="./webp/zelda_banner-desktop.webp"
-      png="./png/zelda_banner.png"
-      desktopPng="./png/zelda_banner-desktop.png"
-    />
+const MiddleBanners = () => {
+  const [productList, setProductList] = useState([]);
 
-    <SingleMiddleBanner
-      name="SEKIRO - Shadows die twice"
-      webp="./webp/sekiro_banner.webp"
-      desktopWebp="./webp/sekiro_banner-desktop.webp"
-      png="./png/sekiro_banner.png"
-      desktopPng="./png/sekiro_banner-desktop.png"
-    />
-  </SectionStyled>
-);
+  useEffect(() => {
+    fetch('./BackEnd/db-middle-banner.json')
+      .then((response) => response.json())
+      .then(({ products }) => setProductList(products));
+  }, []);
+
+  return (
+    <SectionStyled>
+      {productList.length === 0 && <Loading />}
+
+      {productList.length > 0 &&
+        productList.map((product) => (
+          <SingleMiddleBanner
+            key={product.key}
+            name={product.name}
+            webp={product.img.mobile.webp}
+            desktopWebp={product.img.desktop.webp}
+            png={product.img.mobile.png}
+            desktopPng={product.img.desktop.png}
+          />
+        ))}
+    </SectionStyled>
+  );
+};
 
 export default MiddleBanners;
