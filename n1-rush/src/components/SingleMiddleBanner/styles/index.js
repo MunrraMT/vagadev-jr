@@ -3,6 +3,7 @@ import styled from 'styled-components';
 const ArticleStyled = styled.article`
   height: 13.688rem;
   width: 100%;
+  max-width: 35rem;
 
   background-color: var(--color-dark-blue);
   border-bottom-left-radius: 0.313rem;
@@ -41,6 +42,9 @@ const ArticleStyled = styled.article`
   }
 
   & picture {
+    width: 100%;
+    height: 100%;
+
     overflow: hidden;
 
     & img {
@@ -52,9 +56,18 @@ const ArticleStyled = styled.article`
     }
   }
 
+  @media screen and (min-width: 600px) {
+    height: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   @media screen and (min-width: 1200px) {
     height: 26.563rem;
     width: 39.188rem;
+
+    margin: 0;
 
     & picture {
       height: 100%;
