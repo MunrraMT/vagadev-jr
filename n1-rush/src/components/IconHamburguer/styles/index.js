@@ -8,20 +8,22 @@ const IconHamburguer = styled.button`
   border: none;
   cursor: pointer;
 
-  &:hover span {
-    background-color: transparent;
-  }
+  @media screen and (min-width: 900px) {
+    &:hover span {
+      background-color: transparent;
+    }
 
-  &:hover span::before {
-    transform: rotate(45deg);
-    top: 0;
-  }
+    &:hover span::before {
+      transform: rotate(45deg);
+      top: 0;
+    }
 
-  &:hover span::after {
-    width: 1.875rem;
+    &:hover span::after {
+      width: 1.875rem;
 
-    transform: rotate(-45deg);
-    top: 0;
+      transform: rotate(-45deg);
+      top: 0;
+    }
   }
 `;
 
