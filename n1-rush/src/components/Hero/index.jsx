@@ -1,6 +1,7 @@
+import SectionStyled from './styles';
+
 import SinglePrincipalBanner from '../SinglePrincipalBanner';
 import SliderNav from '../SliderNav';
-import SectionStyled from './styles';
 
 const Hero = () => (
   <SectionStyled>

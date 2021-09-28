@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 const SectionStyled = styled.section`
   width: 100%;
-  height: 3.25rem;
 
   color: var(--color-white);
   text-transform: uppercase;
@@ -17,13 +16,18 @@ const SectionStyled = styled.section`
 
   & header {
     flex-grow: 2;
+
+    height: 3.25rem;
+
+    background-color: var(--color-blue);
+    border-bottom-left-radius: 0.625rem;
+
+    display: flex;
+    align-items: center;
   }
 
   & header h3 {
-    line-height: 3.25rem;
-    background-color: var(--color-blue);
     padding-left: 1.375rem;
-    border-bottom-left-radius: 0.625rem;
   }
 
   & section {
@@ -36,91 +40,88 @@ const SectionStyled = styled.section`
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
 
-    & button {
-      height: 2rem;
-      width: 1.5rem;
+  & section p {
+    white-space: nowrap;
+  }
 
-      border: none;
-      background: none;
-      cursor: pointer;
-    }
+  & .actions-slidernav {
+    padding-right: 0;
+  }
+
+  & .actions-slidernav button {
+    height: 2rem;
+    width: 1.5rem;
+
+    border: none;
+    background: none;
+    cursor: pointer;
   }
 
   @media screen and (min-width: 1200px) {
     width: 3.938rem;
     height: 24rem;
 
+    margin-left: -3.938rem;
+    z-index: 10;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
     & header {
-      padding-left: 0px;
+      width: 100%;
+
+      border-radius: 0;
 
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-
-      position: absolute;
-      top: 0;
-      right: 0;
+      justify-content: space-between;
     }
 
     & header h3 {
-      width: 3.938rem;
-      height: 18.75rem;
-
       writing-mode: sideways-rl;
-      border-radius: 0px;
-      padding-top: 1.875rem;
-      padding-left: 0px;
-      line-height: auto;
-
-      display: flex;
-      align-items: center;
+      white-space: nowrap;
+      margin-bottom: 1rem;
+      padding-left: 0;
+      padding-top: 1.375rem;
     }
 
     & header span {
       height: 100%;
-      width: 0.125rem;
+      width: 2px;
 
+      margin-bottom: 1rem;
       background-color: var(--color-white);
-      z-index: 2;
     }
 
     & section {
-      width: 3.938rem;
+      width: 100%;
       height: 5.25rem;
 
-      padding: 0px;
-      border-bottom-left-radius: 0.313rem;
+      border-bottom-left-radius: 0.625rem;
 
-      position: relative;
-      bottom: 0;
-      right: 0;
-
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      display: flex;
+      flex-direction: column;
     }
 
     & section p {
-      grid-column: 1/-1;
-      grid-row: 1/2;
-
-      margin-top: auto;
-      text-align: center;
+      margin-bottom: 0.45rem;
     }
 
-    & section button {
-      width: 100%;
-    }
+    & section .actions-slidernav {
+      width: 3rem;
 
-    & section button:first-child {
-      grid-column: 1/2;
-      grid-row: 2/3;
-    }
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
 
-    & section button:last-child {
-      grid-column: 2/3;
-      grid-row: 2/3;
+      padding: 0;
+      margin: 0;
     }
   }
 `;
