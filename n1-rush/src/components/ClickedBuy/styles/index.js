@@ -7,7 +7,7 @@ const SectionStyled = styled.section`
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 5;
+  z-index: 15;
 
   background-color: var(--color-black-transparent);
   padding: 0 1rem;
@@ -18,6 +18,7 @@ const SectionStyled = styled.section`
 
   & article {
     height: 31.25rem;
+    max-width: 25rem;
 
     background-color: white;
     border-radius: 0.313rem;
