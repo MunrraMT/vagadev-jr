@@ -21,7 +21,7 @@ const MiddleBanners = () => {
       {productList.length > 0 &&
         productList.map((product) => (
           <SingleMiddleBanner
-            key={product.key}
+            key={product.id}
             name={product.name}
             webp={product.img.mobile.webp}
             desktopWebp={product.img.desktop.webp}

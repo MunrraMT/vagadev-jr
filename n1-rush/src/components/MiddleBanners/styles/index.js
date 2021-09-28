@@ -11,20 +11,22 @@ const SectionStyled = styled.section`
   }
 
   @media screen and (min-width: 1200px) {
-    max-width: 79.625rem;
-    height: 26.563rem;
-
     padding: 0;
-
     margin-left: auto;
     margin-right: auto;
-
     margin-top: -9.313rem;
     margin-bottom: 5.5rem;
 
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-evenly;
+  }
+
+  @media screen and (min-width: 1500px) {
+    max-width: 79.625rem;
+    height: 26.563rem;
+
     justify-content: space-between;
 
     & article:first-child {

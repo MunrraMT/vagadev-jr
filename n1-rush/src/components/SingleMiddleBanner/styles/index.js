@@ -70,7 +70,19 @@ const ArticleStyled = styled.article`
   }
 
   @media screen and (min-width: 1200px) {
-    height: 26.563rem;
+    margin: 0;
+    padding: 0;
+    margin: 0;
+
+    width: 100%;
+    height: 100%;
+
+    max-width: 31.25rem;
+    max-height: 18.313rem;
+  }
+
+  @media screen and (min-width: 1500px) {
+    max-height: 26.563rem;
     max-width: 39.188rem;
 
     margin: 0;
