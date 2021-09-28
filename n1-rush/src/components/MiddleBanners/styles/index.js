@@ -11,23 +11,24 @@ const SectionStyled = styled.section`
   }
 
   @media screen and (min-width: 1200px) {
-    width: 78.375rem;
+    width: 79.625rem;
     height: 26.563rem;
 
     padding: 0;
-    margin-top: -9.313rem;
-    margin-bottom: 5.5rem;
+
     margin-left: auto;
     margin-right: auto;
+
+    margin-top: -9.313rem;
+    margin-bottom: 5.5rem;
 
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 
     & article:first-child {
       margin: 0;
-      margin-right: 1.25rem;
     }
   }
 `;

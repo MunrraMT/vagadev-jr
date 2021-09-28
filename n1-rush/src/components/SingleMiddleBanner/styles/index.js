@@ -14,7 +14,7 @@ const ArticleStyled = styled.article`
   flex-direction: column-reverse;
 
   &:hover {
-    box-shadow: 10px 10px 4px var(--color-black-transparent);
+    box-shadow: 5px 5px 4px var(--color-black-transparent);
   }
 
   & header {
@@ -71,12 +71,21 @@ const ArticleStyled = styled.article`
 
   @media screen and (min-width: 1200px) {
     height: 26.563rem;
-    width: 39.188rem;
+    max-width: 39.188rem;
 
     margin: 0;
 
+    &:hover {
+      box-shadow: 10px 10px 4px var(--color-black-transparent);
+    }
+
+    & header {
+      width: calc(39.188rem - 0.368rem);
+    }
+
     & picture {
       height: 100%;
+      width: 39.188rem;
 
       & img {
         width: 100%;
