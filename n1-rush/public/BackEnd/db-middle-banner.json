@@ -1,0 +1,28 @@
+[
+  {
+    "name": "The Legend of Zelda - Breath of th wild",
+    "img": {
+      "mobile": {
+        "png": "./png/zelda_banner.png",
+        "webp": "./webp/zelda_banner.webp"
+      },
+      "desktop": {
+        "png": "./png/zelda_banner-desktop.png",
+        "webp": "./webp/zelda_banner-desktop.webp"
+      }
+    }
+  },
+  {
+    "name": "SEKIRO - Shadows die twice",
+    "img": {
+      "mobile": {
+        "png": "./png/sekiro_banner.png",
+        "webp": "./webp/sekiro_banner.webp"
+      },
+      "desktop": {
+        "png": "./png/sekiro_banner-desktop.png",
+        "webp": "./webp/sekiro_banner-desktop.webp"
+      }
+    }
+  }
+]

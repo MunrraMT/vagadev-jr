@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 const ArticleStyled = styled.article`
   width: 100%;
+  max-width: 21.875rem;
 
   background-color: var(--color-white);
   box-shadow: var(--box-shadow);
@@ -56,6 +57,8 @@ const ArticleStyled = styled.article`
   & img {
     width: 100%;
     height: 100%;
+
+    max-height: 21.875rem;
 
     object-fit: contain;
     object-position: center;

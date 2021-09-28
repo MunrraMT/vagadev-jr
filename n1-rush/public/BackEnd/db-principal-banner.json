@@ -1,0 +1,20 @@
+[
+  {
+    "name": "MORTAL KOMBAT",
+    "price": 20000,
+    "img": {
+      "mobile": {
+        "png": "./png/principal_banner-mobile.png",
+        "webp": "./webp/principal_banner-mobile.webp"
+      },
+      "tablet": {
+        "png": "./png/principal_banner-tablet.png",
+        "webp": "./webp/principal_banner-tablet.webp"
+      },
+      "desktop": {
+        "png": "./png/principal_banner-desktop.png",
+        "webp": "./webp/principal_banner-desktop.webp"
+      }
+    }
+  }
+]

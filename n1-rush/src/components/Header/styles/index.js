@@ -6,7 +6,7 @@ const HeaderStyled = styled.header`
 
   padding: 1.125rem;
   position: fixed;
-  z-index: 3;
+  z-index: 30;
   transition: all 0.3s;
 
   display: flex;

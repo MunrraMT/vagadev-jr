@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "name": "Outriders",
+      "price": 20000,
+      "img": {
+        "png": "./png/product-outriders.png",
+        "webp": "./webp/product-outriders.webp"
+      }
+    },
+    {
+      "name": "CYBERPUNK 2077",
+      "price": 20000,
+      "img": {
+        "png": "./png/product-cyberpunk2077.png",
+        "webp": "./webp/product-cyberpunk2077.webp"
+      }
+    },
+    {
+      "name": "Donkey Kong Country Tropical Freeze",
+      "price": 20000,
+      "img": {
+        "png": "./png/product-donkey-kong-country-tropical-freeze.png",
+        "webp": "./webp/product-donkey-kong-country-tropical-freeze.webp"
+      }
+    }
+  ]
+}
