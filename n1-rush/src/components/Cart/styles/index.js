@@ -1,8 +1,10 @@
 import styled from 'styled-components';
 
-const SectionCart = styled.section`
+const ButtonStyled = styled.button`
   position: relative;
   cursor: pointer;
+  border: none;
+  background: none;
 
   & p {
     background-color: var(--color-blue);
@@ -27,4 +29,4 @@ const SectionCart = styled.section`
   }
 `;
 
-export default SectionCart;
+export default ButtonStyled;

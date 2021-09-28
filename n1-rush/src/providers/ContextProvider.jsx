@@ -6,9 +6,12 @@ import Context from './Context';
 
 const ContextProvider = ({ children }) => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
+  const [isClickedBuy, setIsClickedBuy] = useState(false);
 
   return (
-    <Context.Provider value={{ isOpenMenu, setIsOpenMenu }}>
+    <Context.Provider
+      value={{ isOpenMenu, setIsOpenMenu, isClickedBuy, setIsClickedBuy }}
+    >
       {children}
     </Context.Provider>
   );

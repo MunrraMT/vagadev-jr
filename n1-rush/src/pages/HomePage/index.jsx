@@ -7,14 +7,16 @@ import BestProducts from '../../components/BestProducts';
 import Footer from '../../components/Footer';
 import NavMenuMobile from '../../components/NavMenuMobile';
 import Context from '../../providers/Context';
+import ClickBuy from '../../components/ClickedBuy';
 
 const HomePage = () => {
-  const { isOpenMenu } = useContext(Context);
+  const { isOpenMenu, isClickedBuy } = useContext(Context);
 
   return (
     <>
       <Header />
       {isOpenMenu && <NavMenuMobile />}
+      {isClickedBuy && <ClickBuy />}
 
       <main>
         <Hero />
