@@ -4,7 +4,10 @@ import SectionStyled from './styles';
 
 const SliderNav = ({ nameActual, numberActual, maxLength }) => (
   <SectionStyled>
-    <h3>{nameActual}</h3>
+    <header>
+      <h3>{nameActual}</h3>
+      <span />
+    </header>
 
     <section>
       <p>

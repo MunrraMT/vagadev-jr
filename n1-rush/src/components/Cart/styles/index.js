@@ -29,11 +29,11 @@ const ButtonStyled = styled.button`
   }
 
   @media screen and (min-width: 900px) {
-    width: 7rem;
-
     display: flex;
     align-items: center;
     justify-content: center;
+
+    padding-left: 2.438rem;
 
     & p {
       position: relative;
