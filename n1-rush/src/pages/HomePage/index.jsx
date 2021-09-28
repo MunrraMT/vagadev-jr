@@ -1,5 +1,7 @@
 import { useContext } from 'react';
 
+import SectionStyled from './styles';
+
 import MiddleBanners from '../../components/MiddleBanners';
 import Header from '../../components/Header';
 import Hero from '../../components/Hero';
@@ -13,7 +15,7 @@ const HomePage = () => {
   const { isOpenMenu, isClickedBuy } = useContext(Context);
 
   return (
-    <>
+    <SectionStyled>
       <Header />
       {isOpenMenu && <NavMenuMobile />}
       {isClickedBuy && <ClickBuy />}
@@ -25,7 +27,7 @@ const HomePage = () => {
       </main>
 
       <Footer />
-    </>
+    </SectionStyled>
   );
 };
 

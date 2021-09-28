@@ -6,6 +6,7 @@ import Context from '../../providers/Context';
 import Cart from '../Cart';
 import BtnIconHamburguer from '../IconHamburguer';
 import TitlePage from '../TitlePage';
+import BtnHeader from '../BtnHeader';
 
 const Header = () => {
   const [isMoved, setIsMoved] = useState(false);
@@ -36,24 +37,8 @@ const Header = () => {
       <TitlePage />
 
       <section>
-        <img
-          style={{ cursor: 'pointer' }}
-          width="26.06"
-          height="21.31"
-          src="./svg/paper-plane.svg"
-          alt="Botão para Compartilhar Link"
-          aria-label="Botão para Compartilhar Link"
-        />
-
-        <img
-          style={{ cursor: 'pointer' }}
-          width="25.73"
-          height="25.72"
-          src="./svg/search-solid.svg"
-          alt="Botão buscar jogo por nome"
-          aria-label="Botão buscar jogo por nome"
-        />
-
+        <BtnHeader text="contato" img="./svg/paper-plane.svg" />
+        <BtnHeader text="buscar" img="./svg/search-solid.svg" />
         <Cart />
       </section>
     </HeaderStyled>
