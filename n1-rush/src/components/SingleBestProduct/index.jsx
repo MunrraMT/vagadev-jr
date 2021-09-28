@@ -7,7 +7,7 @@ import priceFormatter from '../../utils/price-formatter';
 const SingleBestProduct = ({ name, price, webp, png }) => (
   <ArticleStyled>
     <header>
-      <h3>{name}</h3>
+      <h3>{name.length > 25 ? `${name.slice(0, 25)}...` : name}</h3>
       <p>{priceFormatter(price)}</p>
       <button type="button">comprar</button>
     </header>

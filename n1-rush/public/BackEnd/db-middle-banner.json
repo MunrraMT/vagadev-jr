@@ -1,5 +1,6 @@
 [
   {
+    "id": 10,
     "name": "The Legend of Zelda - Breath of th wild",
     "img": {
       "mobile": {
@@ -13,6 +14,7 @@
     }
   },
   {
+    "id": 20,
     "name": "SEKIRO - Shadows die twice",
     "img": {
       "mobile": {

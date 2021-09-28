@@ -26,6 +26,14 @@ const SectionStyled = styled.section`
       cursor: pointer;
     }
   }
+
+  @media screen and (min-width: 1200px) {
+    width: 90%;
+    max-width: 79.625rem;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
 `;
 
 export default SectionStyled;

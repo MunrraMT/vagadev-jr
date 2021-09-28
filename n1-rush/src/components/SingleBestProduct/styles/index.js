@@ -2,18 +2,26 @@ import styled from 'styled-components';
 
 const ArticleStyled = styled.article`
   width: 100%;
+  height: 100%;
   max-width: 21.875rem;
+  max-height: 26.438rem;
 
   background-color: var(--color-white);
-  box-shadow: var(--box-shadow);
+  box-shadow: 0px 4px 20px 7px rgba(0, 0, 0, 0.07);
   border-radius: 0.625rem;
   overflow: hidden;
+  transition: all 0.3s;
 
   display: flex;
   flex-direction: column-reverse;
 
+  &:hover {
+    box-shadow: 0px 4px 20px 7px rgba(0, 0, 0, 0.3);
+  }
+
   & header {
     width: 100%;
+    height: 8.827rem;
 
     padding-top: 1.014rem;
     padding-left: 1.5rem;
@@ -24,6 +32,7 @@ const ArticleStyled = styled.article`
 
     display: flex;
     flex-direction: column;
+    justify-content: center;
 
     & h3 {
       text-transform: capitalize;
@@ -41,8 +50,8 @@ const ArticleStyled = styled.article`
     }
 
     & button {
+      padding: 0.663rem 0;
       margin: 0 2.323rem;
-      height: 2.196rem;
       background-color: var(--color-blue);
       color: var(--color-white);
       border: none;
@@ -59,12 +68,31 @@ const ArticleStyled = styled.article`
     height: 100%;
 
     max-height: 21.875rem;
+    max-height: 15.288rem;
 
     object-fit: contain;
     object-position: center;
     border-bottom: 2px solid var(--color-blue);
     padding-top: 1.521rem;
     padding-bottom: 0.676rem;
+  }
+
+  @media screen and (min-width: 900px) {
+    max-width: 17rem;
+  }
+
+  @media screen and (min-width: 1500px) {
+    max-width: 21.875rem;
+    max-height: 37.625rem;
+
+    & header {
+      height: 11.563rem;
+    }
+
+    & img {
+      margin-top: 2.25rem;
+      padding-bottom: 1rem;
+    }
   }
 `;
 

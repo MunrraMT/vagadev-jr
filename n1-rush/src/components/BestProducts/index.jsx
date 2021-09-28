@@ -1,10 +1,12 @@
 import { useContext, useState, useEffect } from 'react';
+
 import SectionStyled from './styles';
 
 import TitleSection from '../TitleSection';
 import Context from '../../providers/Context';
 import ProductSlider from '../ProductSlider';
 import Loading from '../Loading';
+import ProductShow from '../ProductShow';
 
 const BestProducts = () => {
   const [productList, setProductList] = useState([]);
@@ -22,7 +24,9 @@ const BestProducts = () => {
 
       {productList.length === 0 && <Loading />}
 
-      {isDesktop && productList.length > 0 && <p>É desktop!</p>}
+      {isDesktop && productList.length > 0 && (
+        <ProductShow productList={productList} />
+      )}
 
       {!isDesktop && productList.length > 0 && (
         <ProductSlider productList={productList} />

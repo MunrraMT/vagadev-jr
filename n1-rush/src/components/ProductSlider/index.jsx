@@ -85,10 +85,10 @@ ProductSlider.propTypes = {
     shape({
       name: string,
       price: number,
-      img: {
+      img: shape({
         png: string,
         webp: string,
-      },
+      }),
     }),
   ).isRequired,
 };

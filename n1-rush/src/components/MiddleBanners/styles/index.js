@@ -11,7 +11,7 @@ const SectionStyled = styled.section`
   }
 
   @media screen and (min-width: 1200px) {
-    width: 79.625rem;
+    max-width: 79.625rem;
     height: 26.563rem;
 
     padding: 0;
