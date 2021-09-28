@@ -10,6 +10,20 @@ const SectionStyled = styled.section`
   z-index: 2;
 
   background: var(--color-dark-blue);
+  padding-top: 6.316rem;
+  padding-left: 1.813rem;
+  padding-right: 1.813rem;
+
+  display: flex;
+  flex-direction: column;
+
+  & article:not(:first-child) {
+    margin-top: 1rem;
+  }
+
+  & article:not(:last-child) {
+    border-bottom: 1px solid var(--color-very-dark-blue);
+  }
 `;
 
 export default SectionStyled;
