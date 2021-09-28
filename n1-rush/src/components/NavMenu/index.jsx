@@ -8,7 +8,7 @@ import Context from '../../providers/Context';
 import SingleMenuMobile from '../SingleMenuMobile';
 
 const NavMenu = () => {
-  const [isMoved, setIsMoved] = useState(false);
+  const [isMoved, setIsMoved] = useState(window.pageYOffset > 75);
 
   const { isDesktop, setIsOpenMenu } = useContext(Context);
 
