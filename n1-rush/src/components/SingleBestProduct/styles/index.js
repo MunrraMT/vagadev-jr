@@ -67,7 +67,6 @@ const ArticleStyled = styled.article`
     width: 100%;
     height: 100%;
 
-    max-height: 21.875rem;
     max-height: 15.288rem;
 
     object-fit: contain;
@@ -90,6 +89,7 @@ const ArticleStyled = styled.article`
     }
 
     & img {
+      max-height: 21.875rem;
       margin-top: 2.25rem;
       padding-bottom: 1rem;
     }
