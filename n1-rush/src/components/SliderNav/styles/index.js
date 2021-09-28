@@ -71,31 +71,53 @@ const SectionStyled = styled.section`
     align-items: center;
     justify-content: space-between;
 
-    & header {
-      width: 100%;
+    @supports (writing-mode: sideways-rl) {
+      & header {
+        width: 100%;
 
-      border-radius: 0;
+        border-radius: 0;
 
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      & header h3 {
+        writing-mode: sideways-rl;
+        white-space: nowrap;
+        margin-bottom: 1rem;
+        padding-left: 0;
+        padding-top: 1.375rem;
+      }
+
+      & header span {
+        height: 100%;
+        width: 2px;
+
+        margin-bottom: 1rem;
+        background-color: var(--color-white);
+      }
     }
 
-    & header h3 {
-      writing-mode: sideways-rl;
-      white-space: nowrap;
-      margin-bottom: 1rem;
-      padding-left: 0;
-      padding-top: 1.375rem;
-    }
+    @supports not (writing-mode: sideways-rl) {
+      & header {
+        width: 100%;
 
-    & header span {
-      height: 100%;
-      width: 2px;
+        border-radius: 0;
 
-      margin-bottom: 1rem;
-      background-color: var(--color-white);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      & header h3 {
+        transform: rotate(90deg);
+        white-space: nowrap;
+        width: 100%;
+        margin-top: 1.5rem;
+      }
     }
 
     & section {
