@@ -8,6 +8,7 @@ const ArticleStyled = styled.article`
   background-color: var(--color-dark-blue);
   border-bottom-left-radius: 0.313rem;
   transition: all 0.3s;
+  z-index: 10;
 
   display: flex;
   flex-direction: column-reverse;
