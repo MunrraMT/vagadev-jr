@@ -6,6 +6,23 @@ const ButtonStyled = styled.button`
   border: none;
   background: none;
 
+  &:hover:before {
+    width: 70%;
+  }
+
+  &:before {
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: var(--color-blue);
+    transition: all 0.3s;
+
+    position: absolute;
+    bottom: -0.75rem;
+    left: 70%;
+    transform: translateX(-50%);
+  }
+
   & p {
     background-color: var(--color-blue);
     color: var(--color-white);

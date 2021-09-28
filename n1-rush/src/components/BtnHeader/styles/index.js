@@ -6,10 +6,28 @@ const ButtonStyled = styled.button`
   background: none;
   border: none;
   cursor: pointer;
+  position: relative;
 
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &:hover:before {
+    width: 60%;
+  }
+
+  &:before {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: var(--color-blue);
+    transition: all 0.3s;
+
+    position: absolute;
+    bottom: -0.75rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 
   & p {
     opacity: 0;
