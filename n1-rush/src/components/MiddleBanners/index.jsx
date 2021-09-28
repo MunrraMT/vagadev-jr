@@ -7,17 +7,17 @@ const MiddleBanners = () => (
     <SingleMiddleBanner
       name="The Legend of Zelda - Breath of th wild"
       webp="./webp/zelda_banner.webp"
-      webp2x="./webp/zelda_banner-2x.webp"
+      desktopWebp="./webp/zelda_banner-desktop.webp"
       png="./png/zelda_banner.png"
-      png2x="./png/zelda_banner-2x.png"
+      desktopPng="./png/zelda_banner-desktop.png"
     />
 
     <SingleMiddleBanner
       name="SEKIRO - Shadows die twice"
       webp="./webp/sekiro_banner.webp"
-      webp2x="./webp/sekiro_banner-2x.webp"
+      desktopWebp="./webp/sekiro_banner-desktop.webp"
       png="./png/sekiro_banner.png"
-      png2x="./png/sekiro_banner-2x.png"
+      desktopPng="./png/sekiro_banner-desktop.png"
     />
   </SectionStyled>
 );

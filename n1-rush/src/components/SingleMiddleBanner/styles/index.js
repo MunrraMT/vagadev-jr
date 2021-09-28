@@ -51,6 +51,23 @@ const ArticleStyled = styled.article`
       object-position: center;
     }
   }
+
+  @media screen and (min-width: 1200px) {
+    height: 26.563rem;
+    width: 39.188rem;
+
+    & picture {
+      height: 100%;
+
+      & img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+  }
 `;
 
 export default ArticleStyled;
