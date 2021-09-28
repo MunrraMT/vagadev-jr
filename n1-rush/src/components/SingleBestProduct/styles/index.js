@@ -77,7 +77,11 @@ const ArticleStyled = styled.article`
   }
 
   @media screen and (min-width: 900px) {
-    max-width: 17rem;
+    max-width: 15rem;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 18rem;
   }
 
   @media screen and (min-width: 1500px) {
