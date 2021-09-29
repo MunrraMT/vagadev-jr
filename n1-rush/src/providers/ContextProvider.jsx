@@ -10,6 +10,7 @@ const ContextProvider = ({ children }) => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
   const [isClickedBuy, setIsClickedBuy] = useState(false);
   const [isDesktop, setIsDesktop] = useState(false);
+  const [isMoved, setIsMoved] = useState(false);
 
   const [indexPrincipalBanner, setIndexPrincipalBanner] = useState(0);
 
@@ -18,6 +19,8 @@ const ContextProvider = ({ children }) => {
       value={{
         isOpenMenu,
         setIsOpenMenu,
+        isMoved,
+        setIsMoved,
         isClickedBuy,
         setIsClickedBuy,
         cartShop,

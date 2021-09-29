@@ -1,8 +1,7 @@
 import { useEffect, useState } from 'react';
 
 import SectionStyled from './styles';
-
-import SingleMenuMobile from '../SingleMenuMobile';
+import ArticleStyled from '../SingleMenu/styles';
 
 const NavMenuMobile = () => {
   const [isMoved, setIsMoved] = useState(window.pageYOffset > 75);
@@ -27,34 +26,31 @@ const NavMenuMobile = () => {
 
   return (
     <SectionStyled scrolledPage={isMoved}>
-      <SingleMenuMobile
-        content={{
-          id: 'a1',
-          title: 'Luta',
-          list: [
-            'Mortal Kombat',
-            'Smash Bros',
-            'Killer Instict',
-            'DBZ Kakarot',
-          ],
-        }}
-      />
-
-      <SingleMenuMobile
-        content={{
-          id: 'a2',
-          title: 'Ação / Aventura',
-          list: ['GTA V', 'Tomb Raider', 'HALO', 'Call of Duty'],
-        }}
-      />
-
-      <SingleMenuMobile
-        content={{
-          id: 'a3',
-          title: 'Corrida',
-          list: ['NEED for SPEED', 'Forza Horizon'],
-        }}
-      />
+      <ArticleStyled>
+        <h2>Luta</h2>
+        <ul>
+          <li>Mortal Kombat</li>
+          <li>Smash Bros</li>
+          <li>Killer Instict</li>
+          <li>DBZ Kakarot</li>
+        </ul>
+      </ArticleStyled>
+      <ArticleStyled>
+        <h2>Ação / Aventura</h2>
+        <ul>
+          <li>GTA V</li>
+          <li>Tomb Raider</li>
+          <li>HALO</li>
+          <li>Call of Duty</li>
+        </ul>
+      </ArticleStyled>
+      <ArticleStyled>
+        <h2>Corrida</h2>
+        <ul>
+          <li>NEED for SPEED</li>
+          <li>Forza Horizon</li>
+        </ul>
+      </ArticleStyled>
     </SectionStyled>
   );
 };

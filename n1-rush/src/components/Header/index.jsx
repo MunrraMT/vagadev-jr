@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from 'react';
+import { useContext } from 'react';
 
 import HeaderStyled from './styles';
 
@@ -9,13 +9,7 @@ import TitlePage from '../TitlePage';
 import BtnHeader from '../BtnHeader';
 
 const Header = () => {
-  const [isMoved, setIsMoved] = useState(window.pageYOffset > 75);
-
-  const { isOpenMenu, isDesktop } = useContext(Context);
-
-  const handleScroll = () => {
-    setIsMoved(window.pageYOffset > 75);
-  };
+  const { isOpenMenu, isDesktop, isMoved } = useContext(Context);
 
   const handleScrolledPage = () => {
     if (isDesktop && isOpenMenu && !isMoved) return false;
@@ -26,16 +20,10 @@ const Header = () => {
     return false;
   };
 
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   return (
     <HeaderStyled scrolledPage={handleScrolledPage()}>
       <section className="header-content">
-        <BtnIconHamburguer />
+        <BtnIconHamburguer scrolledPage={handleScrolledPage()} />
         <TitlePage />
 
         <nav>

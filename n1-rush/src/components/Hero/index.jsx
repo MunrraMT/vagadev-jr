@@ -25,7 +25,7 @@ const Hero = () => {
   useEffect(() => {
     const autoPlay = setInterval(() => {
       setIndex((prev) => Number(prev) + 1);
-    }, 1500);
+    }, 1800);
 
     if (stopAutoPlay) {
       clearInterval(autoPlay);

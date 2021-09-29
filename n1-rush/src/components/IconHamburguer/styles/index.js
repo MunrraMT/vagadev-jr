@@ -4,26 +4,22 @@ const IconHamburguer = styled.button`
   width: 2.2rem;
   height: 2rem;
 
+  position: relative;
   background-color: transparent;
   border: none;
   cursor: pointer;
 
-  @media screen and (min-width: 900px) {
-    &:hover span {
-      background-color: transparent;
-    }
+  & .tooltip-target {
+    width: 1.5rem;
+    height: 1.5rem;
 
-    &:hover span::before {
-      transform: rotate(45deg);
-      top: 0;
-    }
+    background-color: var(--color-blue);
+    transform: rotate(45deg);
 
-    &:hover span::after {
-      width: 1.875rem;
-
-      transform: rotate(-45deg);
-      top: 0;
-    }
+    position: absolute;
+    top: 2.5rem;
+    left: 0rem;
+    z-index: 1;
   }
 `;
 
