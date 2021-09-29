@@ -9,6 +9,7 @@ const ContextProvider = ({ children }) => {
 
   const [isOpenMenu, setIsOpenMenu] = useState(false);
   const [isClickedBuy, setIsClickedBuy] = useState(false);
+  const [isDesktop, setIsDesktop] = useState(false);
 
   const [indexPrincipalBanner, setIndexPrincipalBanner] = useState(0);
 
@@ -21,6 +22,8 @@ const ContextProvider = ({ children }) => {
         setIsClickedBuy,
         cartShop,
         setCartShop,
+        isDesktop,
+        setIsDesktop,
         indexPrincipalBanner,
         setIndexPrincipalBanner,
       }}
