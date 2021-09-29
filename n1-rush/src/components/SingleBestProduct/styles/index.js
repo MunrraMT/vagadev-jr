@@ -50,16 +50,45 @@ const ArticleStyled = styled.article`
     }
 
     & button {
+      width: 15rem;
+
+      margin-left: auto;
+      margin-right: auto;
+
       padding: 0.663rem 0;
-      margin: 0 2.323rem;
       background-color: var(--color-blue);
       color: var(--color-white);
       border: none;
       border-radius: 0.313rem;
       text-transform: uppercase;
+      cursor: pointer;
 
       font-weight: 900;
       font-size: 0.875rem;
+    }
+
+    & .btn-comprado {
+      background-color: var(--color-dark-blue);
+      padding-left: 1.125rem;
+      position: relative;
+
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      & picture {
+        position: absolute;
+        bottom: -3px;
+        right: 0;
+
+        & img {
+          padding: 0;
+          border: none;
+
+          object-fit: cover;
+          object-position: bottom;
+        }
+      }
     }
   }
 
