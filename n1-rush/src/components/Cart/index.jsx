@@ -1,11 +1,17 @@
-import { useContext } from 'react';
+import { useContext, useEffect, useState } from 'react';
 
 import ButtonStyled from './styles';
 
 import Context from '../../providers/Context';
 
 const Cart = () => {
-  const { setIsClickedBuy } = useContext(Context);
+  const { setIsClickedBuy, cartShop } = useContext(Context);
+
+  const [cartShopNumber, setCartShopNumber] = useState(0);
+
+  useEffect(() => {
+    setCartShopNumber(cartShop.length);
+  }, [cartShop]);
 
   const handleClick = () => {
     setIsClickedBuy((prev) => !prev);
@@ -20,7 +26,7 @@ const Cart = () => {
         alt="Botão mostrar o carrinho de compras"
         aria-label="Botão mostrar o carrinho de compras"
       />
-      <p>2</p>
+      <p>{cartShopNumber}</p>
     </ButtonStyled>
   );
 };

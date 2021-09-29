@@ -5,9 +5,10 @@ import { node } from 'prop-types';
 import Context from './Context';
 
 const ContextProvider = ({ children }) => {
+  const [cartShop, setCartShop] = useState([]);
+
   const [isOpenMenu, setIsOpenMenu] = useState(false);
   const [isClickedBuy, setIsClickedBuy] = useState(false);
-  const [cartShop, setCartShop] = useState(false);
 
   const [indexPrincipalBanner, setIndexPrincipalBanner] = useState(0);
 
