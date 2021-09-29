@@ -9,6 +9,8 @@ const ContextProvider = ({ children }) => {
   const [isClickedBuy, setIsClickedBuy] = useState(false);
   const [isDesktop, setIsDesktop] = useState(false);
 
+  const [indexPrincipalBanner, setIndexPrincipalBanner] = useState(0);
+
   return (
     <Context.Provider
       value={{
@@ -18,6 +20,8 @@ const ContextProvider = ({ children }) => {
         setIsClickedBuy,
         isDesktop,
         setIsDesktop,
+        indexPrincipalBanner,
+        setIndexPrincipalBanner,
       }}
     >
       {children}

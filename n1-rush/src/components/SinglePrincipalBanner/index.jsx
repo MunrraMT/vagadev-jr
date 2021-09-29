@@ -12,8 +12,9 @@ const SinglePrincipalBanner = ({
   bigPng,
   desktopWebp,
   desktopPng,
+  position,
 }) => (
-  <ArticleStyled>
+  <ArticleStyled className={position}>
     <header>
       <h2>{name}</h2>
       <h3>
@@ -54,6 +55,7 @@ SinglePrincipalBanner.propTypes = {
   bigPng: string.isRequired,
   desktopWebp: string.isRequired,
   desktopPng: string.isRequired,
+  position: string.isRequired,
 };
 
 export default SinglePrincipalBanner;
