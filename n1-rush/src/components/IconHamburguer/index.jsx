@@ -24,6 +24,7 @@ const BtnIconHamburguer = () => {
       type="button"
       aria-label="Botão de menu"
       onClick={handleClickDesktopMenu}
+      onMouseEnter={handleClickDesktopMenu}
     >
       <IconBar />
       {openDesktopMenu && (
