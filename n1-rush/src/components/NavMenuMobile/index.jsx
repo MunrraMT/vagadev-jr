@@ -29,6 +29,7 @@ const NavMenuMobile = () => {
     <SectionStyled scrolledPage={isMoved}>
       <SingleMenuMobile
         content={{
+          id: 'a1',
           title: 'Luta',
           list: [
             'Mortal Kombat',
@@ -41,6 +42,7 @@ const NavMenuMobile = () => {
 
       <SingleMenuMobile
         content={{
+          id: 'a2',
           title: 'Ação / Aventura',
           list: ['GTA V', 'Tomb Raider', 'HALO', 'Call of Duty'],
         }}
@@ -48,6 +50,7 @@ const NavMenuMobile = () => {
 
       <SingleMenuMobile
         content={{
+          id: 'a3',
           title: 'Corrida',
           list: ['NEED for SPEED', 'Forza Horizon'],
         }}

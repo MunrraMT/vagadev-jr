@@ -7,7 +7,7 @@ import Context from './Context';
 const ContextProvider = ({ children }) => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
   const [isClickedBuy, setIsClickedBuy] = useState(false);
-  const [isDesktop, setIsDesktop] = useState(false);
+  const [cartShop, setCartShop] = useState(false);
 
   const [indexPrincipalBanner, setIndexPrincipalBanner] = useState(0);
 
@@ -18,8 +18,8 @@ const ContextProvider = ({ children }) => {
         setIsOpenMenu,
         isClickedBuy,
         setIsClickedBuy,
-        isDesktop,
-        setIsDesktop,
+        cartShop,
+        setCartShop,
         indexPrincipalBanner,
         setIndexPrincipalBanner,
       }}
