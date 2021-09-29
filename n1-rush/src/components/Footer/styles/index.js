@@ -41,6 +41,16 @@ const FooterStyled = styled.footer`
     align-items: center;
     justify-content: center;
   }
+
+  @media screen and (min-width: 900px) {
+    & section:last-child {
+      width: 30%;
+      max-width: 34.188rem;
+
+      justify-content: flex-end;
+      padding-right: 2.75rem;
+    }
+  }
 `;
 
 export default FooterStyled;
