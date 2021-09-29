@@ -12,9 +12,19 @@ const Hero = () => {
   const [stopAutoPlay, setStopAutoPlay] = useState(false);
 
   useEffect(() => {
+    let isCancelled = false;
+
     fetch('./BackEnd/db-principal-banner.json')
       .then((response) => response.json())
-      .then(({ products }) => setProductList(products));
+      .then(({ products }) => {
+        if (!isCancelled) {
+          setProductList(products);
+        }
+      });
+
+    return () => {
+      isCancelled = true;
+    };
   }, []);
 
   useEffect(() => {

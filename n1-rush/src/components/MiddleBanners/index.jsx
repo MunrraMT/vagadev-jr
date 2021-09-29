@@ -9,9 +9,19 @@ const MiddleBanners = () => {
   const [productList, setProductList] = useState([]);
 
   useEffect(() => {
+    let isCancelled = false;
+
     fetch('./BackEnd/db-middle-banner.json')
       .then((response) => response.json())
-      .then(({ products }) => setProductList(products));
+      .then(({ products }) => {
+        if (!isCancelled) {
+          setProductList(products);
+        }
+      });
+
+    return () => {
+      isCancelled = true;
+    };
   }, []);
 
   return (

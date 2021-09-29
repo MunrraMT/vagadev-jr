@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useContext, useState, useEffect } from 'react';
 
 import SectionStyled from './styles';
@@ -14,9 +15,19 @@ const BestProducts = () => {
   const { isDesktop } = useContext(Context);
 
   useEffect(() => {
+    let isCancelled = false;
+
     fetch('./BackEnd/db-best-products.json')
       .then((response) => response.json())
-      .then(({ products }) => setProductList(products));
+      .then(({ products }) => {
+        if (!isCancelled) {
+          setProductList(products);
+        }
+      });
+
+    return () => {
+      isCancelled = true;
+    };
   }, []);
 
   return (
