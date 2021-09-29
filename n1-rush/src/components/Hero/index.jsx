@@ -18,15 +18,14 @@ const Hero = () => {
   }, []);
 
   useEffect(() => {
-    const autoPlay = setInterval(() => {
-      setIndex((prev) => {
-        if (prev >= productList.length - 1) {
-          return 0;
-        }
+    if (index > productList.length - 1) setIndex(0);
+    if (index < 0) setIndex(productList.length - 1);
+  }, [index]);
 
-        return Number(prev) + 1;
-      });
-    }, 1800);
+  useEffect(() => {
+    const autoPlay = setInterval(() => {
+      setIndex((prev) => Number(prev) + 1);
+    }, 1500);
 
     if (stopAutoPlay) {
       clearInterval(autoPlay);
@@ -38,16 +37,12 @@ const Hero = () => {
   }, [stopAutoPlay]);
 
   const handleClickNext = () => {
-    if (index >= 0) setIndex((prev) => Number(prev) + 1);
-    if (index === productList.length - 1) setIndex(0);
-
+    setIndex((prev) => Number(prev) + 1);
     setStopAutoPlay(true);
   };
 
   const handleClickPrev = () => {
-    if (index <= productList.length - 1) setIndex((prev) => prev - 1);
-    if (index === 0) setIndex(productList.length - 1);
-
+    setIndex((prev) => prev - 1);
     setStopAutoPlay(true);
   };
 
