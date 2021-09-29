@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 import SectionStyled from './styles';
-import ArticleStyled from '../SingleMenu/styles';
+import ArticleStyled from './styles/ArticleStyled';
 
 const NavMenuMobile = () => {
   const [isMoved, setIsMoved] = useState(window.pageYOffset > 75);
