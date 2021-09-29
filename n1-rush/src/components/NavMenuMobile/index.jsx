@@ -1,16 +1,11 @@
-/* eslint-disable no-return-assign */
-
-import { useContext, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import SectionStyled from './styles';
 
-import Context from '../../providers/Context';
 import SingleMenuMobile from '../SingleMenuMobile';
 
-const NavMenu = () => {
+const NavMenuMobile = () => {
   const [isMoved, setIsMoved] = useState(window.pageYOffset > 75);
-
-  const { isDesktop, setIsOpenMenu } = useContext(Context);
 
   const handleScroll = () => {
     setIsMoved(window.pageYOffset > 75);
@@ -23,20 +18,15 @@ const NavMenu = () => {
   }, []);
 
   useEffect(() => {
-    if (!isDesktop) {
-      document.body.style.overflow = 'hidden';
-    }
-    return () => (document.body.style.overflow = 'unset');
-  }, [isDesktop]);
+    document.body.style.overflow = 'hidden';
 
-  const handleMouseLeave = () => {
-    if (isDesktop) {
-      setIsOpenMenu((prev) => !prev);
-    }
-  };
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, []);
 
   return (
-    <SectionStyled scrolledPage={isMoved} onMouseLeave={handleMouseLeave}>
+    <SectionStyled scrolledPage={isMoved}>
       <SingleMenuMobile
         content={{
           title: 'Luta',
@@ -66,4 +56,4 @@ const NavMenu = () => {
   );
 };
 
-export default NavMenu;
+export default NavMenuMobile;
