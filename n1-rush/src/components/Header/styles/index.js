@@ -2,55 +2,62 @@ import styled from 'styled-components';
 
 const HeaderStyled = styled.header`
   width: 100%;
-  max-width: 74.375rem;
 
-  padding: 1.125rem;
   position: fixed;
-  z-index: 30;
-  transition: all 0.3s;
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  top: 0;
+  left: 0;
+  z-index: 15;
 
   background: ${(props) =>
-    props.scrolledPage ? 'var(--color-black-transparent)' : 'none'};
+    props.scrolledPage && 'var(--color-black-transparent)'};
+  transition: all 0.3s;
 
-  & h1 {
+  & .header-content {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    padding: 1.313rem 1rem;
+    transition: all 0.3s;
+  }
+
+  & .header-content h1 {
     margin-left: 1.75rem;
     margin-right: auto;
   }
 
-  & section {
+  & .header-content nav {
+    width: 7rem;
+
     display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
 
-    & button {
-      margin-right: 1.267rem;
-    }
+    margin-right: 1rem;
   }
 
   @media screen and (min-width: 900px) {
-    padding-top: ${(props) => (props.scrolledPage ? '1.125rem' : '2.75rem')};
+    & .header-content {
+      max-width: 74.375rem;
 
-    & section button:not(:last-child) {
+      margin-left: auto;
+      margin-right: auto;
+
+      padding-left: 2rem;
+      padding-top: ${(props) => (props.scrolledPage ? '1.313rem' : '2.75rem')};
+    }
+
+    & .header-content nav {
+      width: 27rem;
+    }
+
+    & .header-content nav button:not(:last-child) {
       margin-right: 0rem;
       border-right: 1px solid var(--color-white);
     }
-
-    & section button:last-child {
-      margin-right: 0rem;
-    }
-  }
-
-  @media screen and (min-width: 1500px) {
-    max-width: 100vw;
-
-    padding-left: 23rem;
-    padding-right: 23rem;
   }
 `;
 

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useContext, useEffect, useState } from 'react';
 
 import HeaderStyled from './styles';
@@ -9,7 +10,7 @@ import TitlePage from '../TitlePage';
 import BtnHeader from '../BtnHeader';
 
 const Header = () => {
-  const [isMoved, setIsMoved] = useState(false);
+  const [isMoved, setIsMoved] = useState(window.pageYOffset > 75);
 
   const { isOpenMenu, isDesktop } = useContext(Context);
 
@@ -34,13 +35,15 @@ const Header = () => {
 
   return (
     <HeaderStyled scrolledPage={handleScrolledPage()}>
-      <BtnIconHamburguer />
-      <TitlePage />
+      <section className="header-content">
+        <BtnIconHamburguer />
+        <TitlePage />
 
-      <section>
-        <BtnHeader text="contato" img="./svg/paper-plane.svg" />
-        <BtnHeader text="buscar" img="./svg/search-solid.svg" />
-        <Cart />
+        <nav>
+          <BtnHeader text="contato" img="./svg/paper-plane.svg" />
+          <BtnHeader text="buscar" img="./svg/search-solid.svg" />
+          <Cart />
+        </nav>
       </section>
     </HeaderStyled>
   );
